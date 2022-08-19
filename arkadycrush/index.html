@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cоня молодец</title>
+    <style type="text/css">
+      .name {
+        color: green;
+      }
+      .name:hover {
+        font-size: 110px;
+        color: #dd0009;
+      }
+      body {
+        height: 100%;
+        background: rgb(0,121,38);
+        background: linear-gradient(45deg, rgba(0,121,38,1) 0%, rgba(0,237,255,1) 47%, rgba(255,255,255,1) 100%);
+      }
+      p{
+        background-color: #FFC300;
+        padding: 8px;
+        display: inline-block;
+        font-size: 100px;
+      }
+      .kfc{
+        transition: all 0.2s ease;
+      }
+      .kfc:hover {
+        transform: rotate(180deg);
+      }
+      .popa{
+        transition: all 0.2s ease;
+      }
+      .popa:hover {
+        transform: scale(-1, 1)
+      }
+      fieldset {
+        background-color: #FF5733;
+        padding: 10px;
+        display: inline-block;
+        font-size: 20px;
+        border: 1px solid #C70039;
+        padding: 10px;
+      }
+      .zagolovok{
+        background-color: #FFC300;
+        padding: 10px;
+        display: inline-block;
+
+      }
+      .question{
+        background-color: #DAF7A6;
+        padding: 10px;
+        display: inline-block;
+        font-size: 20px;
+      }
+      .tick{
+        width:20px;
+        height:20px;
+      }
+      .button{
+        background: #900C3F;
+        color: #fff;
+        padding: 6px;
+        border-radius: 5px;
+      }
+      .button:hover{
+        background: #C70039;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a class="name" href="https://vk.com/leo">
+         <b>Леня</b>
+      </a> лолка
+    </p>
+    <div>
+      <audio controls>
+      <source src="./music/level-up.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div>
+      <img class="kfc" src="./pictures/Курица.jpg">
+      <img class="popa" src="./pictures/Курица.jpg">
+    </div>
+    <fieldset class='opros'>
+      <legend class="zagolovok"> Пиши опросик, жуй кокосик </legend>
+        <form>
+          <n class="question"> Имя </n>
+          <input type="text" placeholder='сюды'>
+        <div>
+          <n class="question"> Какой у тебя любимый зверек? </n>
+          <select>
+            <option> Выберите питомца </option>
+            <option>котик</option>
+            <option>песик</option>
+            <option>черепашка</option>
+            <option>хрюшка</option>
+            <option>хомячок</option>
+          </select>
+        </div>
+        <div>
+          <n class="question"> Любимое время года? </n>
+          <input name="season" type="radio" > зима
+          <input name="season" type="radio" > весна
+          <input name="season" type="radio" > лето
+          <input name="season" type="radio" > осень
+        </div>
+    <n class="question">  Насколько любишь своего питомца? </n>
+      <input type="range" min="0" max="1000" step="1">
+    </div>
+        <div>
+          <n class="question"> Согласен на обработку персональных данных? </n>
+          <input class="tick" type="checkbox"> (да)
+        </div>
+    <input class="button" type="reset">
+      </form>
+    </fieldset>
+  </body>
+</html>
